@@ -1,0 +1,49 @@
+#!/bin/sh
+
+case "$1" in
+  start)
+    echo "Loading LDD modules"
+    # NETWORKING because qemu is a bitch
+    ifconfig eth0 up
+    udhcpc -i eth0 -b
+    
+    
+    # Attempt to load scull and crap
+	# Force a search for the modules to avoid hardcoded version errors
+	SCULL_PATH=$(find /lib/modules -name scull.ko | head -n 1)
+	FAULTY_PATH=$(find /lib/modules -name faulty.ko | head -n 1)
+	HELLO_PATH=$(find /lib/modules -name hello.ko | head -n 1)
+
+	echo "Loading modules from: $SCULL_PATH"
+
+	if [ -n "$SCULL_PATH" ]; then
+		insmod "$SCULL_PATH"
+		insmod "$FAULTY_PATH"
+		insmod "$HELLO_PATH"
+	else
+		echo "ERROR: Could not find modules in /lib/modules"
+	fi
+
+    # Function to create nodes safely
+    create_node() {
+        local module=$1
+        local node=$2
+        major=$(awk '$2=="'$module'" {print $1}' /proc/devices)
+        if [ -n "$major" ]; then
+            rm -f /dev/$node
+            mknod /dev/$node c $major 0
+            chmod 666 /dev/$node
+            echo "Created /dev/$node with major $major"
+        else
+            echo "Could not find major number for $module"
+        fi
+    }
+
+    create_node "scull" "scull0"
+    create_node "faulty" "faulty"
+    ;;
+  stop)
+    rmmod faulty scull hello 2>/dev/null
+    rm -f /dev/scull0 /dev/faulty
+    ;;
+esac

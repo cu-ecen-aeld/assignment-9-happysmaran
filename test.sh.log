@@ -1,0 +1,283 @@
+Running test with user smaran
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Generating ;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;test/assignment7/Test_circular_buffer.c
+-- Building executable including ;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;test/assignment7/Test_circular_buffer.c and ../examples/autotest-validate/autotest-validate.c;../aesd-char-driver/aesd-circular-buffer.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/smaran/Desktop/assignment-8-happysmaran/build
+[  7%] Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
+[ 15%] Linking C static library libunity.a
+[ 15%] Built target unity
+[ 23%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../assignment-autotest/test/assignment7/Test_circular_buffer_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c test/assignment7/Test_circular_buffer.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for test/assignment7/Test_circular_buffer.c
+Autogenerating test/unity_runner.c
+[ 30%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+[ 38%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+[ 46%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment7/Test_circular_buffer.c.o
+[ 53%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 61%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 69%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment7/Test_circular_buffer_Runner.c.o
+[ 76%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 84%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/aesd-char-driver/aesd-circular-buffer.c.o
+[ 92%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
+[100%] Linking C executable assignment-autotest
+[100%] Built target assignment-autotest
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_hello.c:6:test_hello:INFO: Hello!  Your unity setup is working!
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_hello.c:4:test_hello:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_assignment_validate.c:9:test_assignment_validate:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:72:test_circular_buffer:INFO: Write strings 1 to 10 to the circular buffer
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:83:test_circular_buffer:INFO: Verify strings 1 through 10 exist in the circular buffer
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:41:test_circular_buffer:FAIL: null pointer unexpected when verifying offset 0 with expect string write1\n
+
+-----------------------
+1 Tests 1 Failures 0 Ignored 
+FAIL
+Unit test failed
+Executing assignment test script
+STEPS TO MANUALLY TEST ASSIGNMENT 8 on your native machine
+These steps are useful for debugging your application before attempting to run on
+an embedded target
+After following assignment implementation steps
+cd into your aesd-char-driver DIRECTORY and do a make to build for your development machine.
+RUN ./aesdchar_unload, followed by ./aesdchar_load to load your module on your development machine
+From your main root assignment directory,
+RUN ./assignment-autotest/test/assignment8/drivertest.sh to verify you implementation
+When drivertest succeeds, start your modified aesdsocket application from the server subdirectory
+Verify it passes sockettest.sh by running ./assignment-autotest/test/assignment8/sockettest.sh
+Test of assignment assignment8 complete with success
+Running test with user smaran
+-- Generating ;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;test/assignment7/Test_circular_buffer.c
+-- Building executable including ;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;test/assignment7/Test_circular_buffer.c and ../examples/autotest-validate/autotest-validate.c;../aesd-char-driver/aesd-circular-buffer.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/smaran/Desktop/assignment-8-happysmaran/build
+[  7%] Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
+[ 15%] Linking C static library libunity.a
+[ 15%] Built target unity
+[ 23%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../assignment-autotest/test/assignment7/Test_circular_buffer_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c test/assignment7/Test_circular_buffer.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for test/assignment7/Test_circular_buffer.c
+Autogenerating test/unity_runner.c
+[ 30%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+[ 38%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+[ 46%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment7/Test_circular_buffer.c.o
+[ 53%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 61%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 69%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment7/Test_circular_buffer_Runner.c.o
+[ 76%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 84%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/aesd-char-driver/aesd-circular-buffer.c.o
+/home/smaran/Desktop/assignment-8-happysmaran/aesd-char-driver/aesd-circular-buffer.c:63:13: error: conflicting types for ‘aesd_circular_buffer_add_entry’; have ‘const char *(struct aesd_circular_buffer *, const struct aesd_buffer_entry *)’
+   63 | const char *aesd_circular_buffer_add_entry(struct aesd_circular_buffer *buffer, const struct aesd_buffer_entry *add_entry)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/smaran/Desktop/assignment-8-happysmaran/aesd-char-driver/aesd-circular-buffer.c:17:
+/home/smaran/Desktop/assignment-8-happysmaran/aesd-char-driver/aesd-circular-buffer.h:57:13: note: previous declaration of ‘aesd_circular_buffer_add_entry’ with type ‘void(struct aesd_circular_buffer *, const struct aesd_buffer_entry *)’
+   57 | extern void aesd_circular_buffer_add_entry(struct aesd_circular_buffer *buffer, const struct aesd_buffer_entry *add_entry);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make:189: assignment-autotest/CMakeFiles/assignment-autotest.dir/__/aesd-char-driver/aesd-circular-buffer.c.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:130: assignment-autotest/CMakeFiles/assignment-autotest.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2
+./unit-test.sh: line 13: ./build/assignment-autotest/assignment-autotest: No such file or directory
+Unit test failed
+Executing assignment test script
+STEPS TO MANUALLY TEST ASSIGNMENT 8 on your native machine
+These steps are useful for debugging your application before attempting to run on
+an embedded target
+After following assignment implementation steps
+cd into your aesd-char-driver DIRECTORY and do a make to build for your development machine.
+RUN ./aesdchar_unload, followed by ./aesdchar_load to load your module on your development machine
+From your main root assignment directory,
+RUN ./assignment-autotest/test/assignment8/drivertest.sh to verify you implementation
+When drivertest succeeds, start your modified aesdsocket application from the server subdirectory
+Verify it passes sockettest.sh by running ./assignment-autotest/test/assignment8/sockettest.sh
+Test of assignment assignment8 complete with success
+Running test with user smaran
+-- Generating ;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;test/assignment7/Test_circular_buffer.c
+-- Building executable including ;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;test/assignment7/Test_circular_buffer.c and ../examples/autotest-validate/autotest-validate.c;../aesd-char-driver/aesd-circular-buffer.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/smaran/Desktop/assignment-8-happysmaran/build
+[  7%] Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
+[ 15%] Linking C static library libunity.a
+[ 15%] Built target unity
+[ 23%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../assignment-autotest/test/assignment7/Test_circular_buffer_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c test/assignment7/Test_circular_buffer.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for test/assignment7/Test_circular_buffer.c
+Autogenerating test/unity_runner.c
+[ 30%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+[ 38%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+[ 46%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment7/Test_circular_buffer.c.o
+[ 53%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 61%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 69%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment7/Test_circular_buffer_Runner.c.o
+[ 76%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 84%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/aesd-char-driver/aesd-circular-buffer.c.o
+/home/smaran/Desktop/assignment-8-happysmaran/aesd-char-driver/aesd-circular-buffer.c:63:13: error: conflicting types for ‘aesd_circular_buffer_add_entry’; have ‘const char *(struct aesd_circular_buffer *, const struct aesd_buffer_entry *)’
+   63 | const char *aesd_circular_buffer_add_entry(struct aesd_circular_buffer *buffer, const struct aesd_buffer_entry *add_entry)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/smaran/Desktop/assignment-8-happysmaran/aesd-char-driver/aesd-circular-buffer.c:17:
+/home/smaran/Desktop/assignment-8-happysmaran/aesd-char-driver/aesd-circular-buffer.h:57:13: note: previous declaration of ‘aesd_circular_buffer_add_entry’ with type ‘void(struct aesd_circular_buffer *, const struct aesd_buffer_entry *)’
+   57 | extern void aesd_circular_buffer_add_entry(struct aesd_circular_buffer *buffer, const struct aesd_buffer_entry *add_entry);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [assignment-autotest/CMakeFiles/assignment-autotest.dir/build.make:189: assignment-autotest/CMakeFiles/assignment-autotest.dir/__/aesd-char-driver/aesd-circular-buffer.c.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:130: assignment-autotest/CMakeFiles/assignment-autotest.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2
+./unit-test.sh: line 13: ./build/assignment-autotest/assignment-autotest: No such file or directory
+Unit test failed
+Executing assignment test script
+STEPS TO MANUALLY TEST ASSIGNMENT 8 on your native machine
+These steps are useful for debugging your application before attempting to run on
+an embedded target
+After following assignment implementation steps
+cd into your aesd-char-driver DIRECTORY and do a make to build for your development machine.
+RUN ./aesdchar_unload, followed by ./aesdchar_load to load your module on your development machine
+From your main root assignment directory,
+RUN ./assignment-autotest/test/assignment8/drivertest.sh to verify you implementation
+When drivertest succeeds, start your modified aesdsocket application from the server subdirectory
+Verify it passes sockettest.sh by running ./assignment-autotest/test/assignment8/sockettest.sh
+Test of assignment assignment8 complete with success
+Running test with user smaran
+-- Generating ;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;test/assignment7/Test_circular_buffer.c
+-- Building executable including ;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;test/assignment7/Test_circular_buffer.c and ../examples/autotest-validate/autotest-validate.c;../aesd-char-driver/aesd-circular-buffer.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/smaran/Desktop/assignment-8-happysmaran/build
+[  7%] Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
+[ 15%] Linking C static library libunity.a
+[ 15%] Built target unity
+[ 23%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../assignment-autotest/test/assignment7/Test_circular_buffer_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c test/assignment7/Test_circular_buffer.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for test/assignment7/Test_circular_buffer.c
+Autogenerating test/unity_runner.c
+[ 30%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+[ 38%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+[ 46%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment7/Test_circular_buffer.c.o
+[ 53%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 61%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 69%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment7/Test_circular_buffer_Runner.c.o
+[ 76%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 84%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/aesd-char-driver/aesd-circular-buffer.c.o
+[ 92%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
+[100%] Linking C executable assignment-autotest
+[100%] Built target assignment-autotest
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_hello.c:6:test_hello:INFO: Hello!  Your unity setup is working!
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_hello.c:4:test_hello:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_assignment_validate.c:9:test_assignment_validate:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:72:test_circular_buffer:INFO: Write strings 1 to 10 to the circular buffer
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:83:test_circular_buffer:INFO: Verify strings 1 through 10 exist in the circular buffer
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:94:test_circular_buffer:INFO: Verify a request for the last byte in the circular buffer succeeds
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:96:test_circular_buffer:INFO: Verify a request for one offset past the last byte in the circular buffer returns not found
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:98:test_circular_buffer:INFO: Write one more packet to the circular buffer, causing the first entry to be removed
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:100:test_circular_buffer:INFO: Verify the first entry is removed, and all other remaining entries are found at the correct offsets
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:68:test_circular_buffer:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Executing assignment test script
+STEPS TO MANUALLY TEST ASSIGNMENT 8 on your native machine
+These steps are useful for debugging your application before attempting to run on
+an embedded target
+After following assignment implementation steps
+cd into your aesd-char-driver DIRECTORY and do a make to build for your development machine.
+RUN ./aesdchar_unload, followed by ./aesdchar_load to load your module on your development machine
+From your main root assignment directory,
+RUN ./assignment-autotest/test/assignment8/drivertest.sh to verify you implementation
+When drivertest succeeds, start your modified aesdsocket application from the server subdirectory
+Verify it passes sockettest.sh by running ./assignment-autotest/test/assignment8/sockettest.sh
+Test of assignment assignment8 complete with success
+Running test with user smaran
+-- Generating ;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;test/assignment7/Test_circular_buffer.c
+-- Building executable including ;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;test/assignment7/Test_circular_buffer.c and ../examples/autotest-validate/autotest-validate.c;../aesd-char-driver/aesd-circular-buffer.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/smaran/Desktop/assignment-8-happysmaran/build
+[  7%] Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
+[ 15%] Linking C static library libunity.a
+[ 15%] Built target unity
+[ 23%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../assignment-autotest/test/assignment7/Test_circular_buffer_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c test/assignment7/Test_circular_buffer.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for test/assignment7/Test_circular_buffer.c
+Autogenerating test/unity_runner.c
+[ 30%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+[ 38%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+[ 46%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment7/Test_circular_buffer.c.o
+[ 53%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 61%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 69%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment7/Test_circular_buffer_Runner.c.o
+[ 76%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 84%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/aesd-char-driver/aesd-circular-buffer.c.o
+[ 92%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
+[100%] Linking C executable assignment-autotest
+[100%] Built target assignment-autotest
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_hello.c:6:test_hello:INFO: Hello!  Your unity setup is working!
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_hello.c:4:test_hello:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment1/Test_assignment_validate.c:9:test_assignment_validate:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:72:test_circular_buffer:INFO: Write strings 1 to 10 to the circular buffer
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:83:test_circular_buffer:INFO: Verify strings 1 through 10 exist in the circular buffer
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:94:test_circular_buffer:INFO: Verify a request for the last byte in the circular buffer succeeds
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:96:test_circular_buffer:INFO: Verify a request for one offset past the last byte in the circular buffer returns not found
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:98:test_circular_buffer:INFO: Write one more packet to the circular buffer, causing the first entry to be removed
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:100:test_circular_buffer:INFO: Verify the first entry is removed, and all other remaining entries are found at the correct offsets
+/home/smaran/Desktop/assignment-8-happysmaran/assignment-autotest/test/assignment7/Test_circular_buffer.c:68:test_circular_buffer:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Executing assignment test script
+STEPS TO MANUALLY TEST ASSIGNMENT 8 on your native machine
+These steps are useful for debugging your application before attempting to run on
+an embedded target
+After following assignment implementation steps
+cd into your aesd-char-driver DIRECTORY and do a make to build for your development machine.
+RUN ./aesdchar_unload, followed by ./aesdchar_load to load your module on your development machine
+From your main root assignment directory,
+RUN ./assignment-autotest/test/assignment8/drivertest.sh to verify you implementation
+When drivertest succeeds, start your modified aesdsocket application from the server subdirectory
+Verify it passes sockettest.sh by running ./assignment-autotest/test/assignment8/sockettest.sh
+Test of assignment assignment8 complete with success
